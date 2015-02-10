@@ -1,0 +1,33 @@
+{
+  "name": "laravel-elixir-compass",
+  "version": "0.2.5",
+  "description": "Laravel Elixir Compass Extension",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/morrislaptop/laravel-elixir-compass.git"
+  },
+  "keywords": [
+    "laravel",
+    "elixir",
+    "compass",
+    "gulp"
+  ],
+  "author": "Craig Morris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/morrislaptop/laravel-elixir-compass/issues"
+  },
+  "homepage": "https://github.com/morrislaptop/laravel-elixir-compass",
+  "dependencies": {
+    "gulp-compass": "^2.0.3",
+    "gulp-load-plugins": "^0.8.0",
+    "underscore": "^1.7.0"
+  },
+  "peerDependencies": {
+    "laravel-elixir": "^0.10.7"
+  }
+}
