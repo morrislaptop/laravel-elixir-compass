@@ -1,6 +1,12 @@
 laravel-elixir-compass
 ======================
 
+## Installation
+
+Until rynocouse brings his package up to speed, you can install this package directly using..
+
+`npm install laravel-elixir-compass@morrislaptop/laravel-elixir-compass`
+
 ## Usage
 This is a simple compass wrapper for Laravel Elixir for gulp-compass
 
