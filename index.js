@@ -7,7 +7,8 @@ elixir.extend('compass', function (src, output, options) {
 	options = _.extend({
 		config_file: './config.rb',
 		sass: './resources/assets/compass',
-		css: './public/css'
+		css: './public/css',
+		sourcemaps: elixir.config.sourcemaps
 	}, options);
 
 	return compile({
