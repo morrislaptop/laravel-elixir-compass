@@ -10,7 +10,6 @@
  */ 
 var gulp = require('gulp');
 var plugins = require('gulp-load-plugins')();
-var compass = require('gulp-compass');
 var config = require('laravel-elixir').config;
 var utilities = require('laravel-elixir/ingredients/commands/Utilities');
 var Notification = require('laravel-elixir/ingredients/commands/Notification');
@@ -29,7 +28,7 @@ module.exports = function(options) {
 
     gulp.task(options.pluginName, function() {
         return gulp.src(src)
-            .pipe(compass(options.pluginOptions)).on('error', onError)
+            .pipe(plugins[options.pluginName](options.pluginOptions)).on('error', onError)
             .pipe(plugins.autoprefixer())
             .pipe(plugins.if(config.production, plugins.minifyCss()))
             .pipe(gulp.dest(options.output || config.cssOutput))
